@@ -1228,3 +1228,10 @@ input[type='checkbox']:checked
 .modal-btn:focus {
   background-color: var(--color-ocean);
 }
+
+.qwerty {
+  background-color: #2e2f42;
+  fill: #ffffff;
+  color: #ffffff;
+  opacity: 1;
+}
