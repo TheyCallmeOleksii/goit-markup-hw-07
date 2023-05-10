@@ -209,12 +209,6 @@ body {
   text-transform: uppercase;
 }
 
-@media only screen and (max-width: 767px;) {
-  .header-nav {
-    display: none;
-  }
-}
-
 .logo-link {
   font-family: var(--secondary-font), sans-serif;
   font-weight: 800;
@@ -305,6 +299,18 @@ body {
   gap: 40px;
 }
 
+/* @media screen and (min-width: 320px) {
+  .nav-list {
+    display: none;
+  }
+} */
+
+@media screen and (max-width: 767px) {
+  .nav-list {
+    display: none;
+  }
+}
+
 .header-contacts {
   font-style: normal;
   margin-left: auto;
@@ -314,6 +320,12 @@ body {
   display: flex;
   align-items: center;
   gap: 40px;
+}
+
+@media screen and (max-width: 767px) {
+  .contacts-list {
+    display: none;
+  }
 }
 
 .contacts-link {
