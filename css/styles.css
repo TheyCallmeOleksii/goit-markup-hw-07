@@ -623,6 +623,7 @@ body {
     text-align: center;
     margin-right: auto;
     margin-left: auto;
+    gap: 72px;
   }
 }
 
@@ -931,8 +932,8 @@ body {
 */
 
 .partner {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 .partner-title {
   font-weight: 700;
@@ -1262,7 +1263,7 @@ body {
 
 @media screen and (max-width: 767px) {
   .footer-input-email {
-    width: 320px;
+    width: 310px;
   }
 }
 
@@ -1483,7 +1484,13 @@ body {
   transition: transform 300ms linear 200ms, opacity 300ms linear 200ms;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 396px) {
+  .modal {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 397px) and (max-width: 767px) {
   .modal {
     width: 392px;
   }
@@ -1543,7 +1550,6 @@ body {
   line-height: 1.5;
   text-align: center;
   color: var(--color-navy-blue);
-  margin-top: 24px;
   margin-bottom: 16px;
 }
 .modal-form {
@@ -1841,6 +1847,12 @@ input[type='checkbox']:checked
   font-style: normal;
 }
 
+@media screen and (max-width: 767px) {
+  .mobile-burger-tel {
+    font-size: 24px;
+  }
+}
+
 .mobile-burger-mail {
   font-style: normal;
   font-weight: 500;
@@ -1856,9 +1868,16 @@ input[type='checkbox']:checked
 
 .mobile-social {
   display: flex;
-  gap: 56px;
+  justify-content: center;
+  gap: 36px;
+  margin: 0 auto;
 }
 
+@media screen and (min-width: 428px) {
+  .mobile-social {
+    gap: 56px;
+  }
+}
 /**
   |============================
   | /Mobile>
